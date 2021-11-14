@@ -10,6 +10,7 @@
   <link href="Bootstrap%20Theme%20The%20Band_files/css.css" rel="stylesheet" type="text/css">
   <script src="Bootstrap%20Theme%20The%20Band_files/jquery.js"></script>
   <script src="Bootstrap%20Theme%20The%20Band_files/bootstrap.js"></script>
+  <script type="text/javascript" src="node_modules/accessibility/dist/accessibility.min.js"></script>
   <style>
   body {
     font: 400 15px/1.8 Lato, sans-serif;
@@ -461,6 +462,8 @@ $(document).ready(function(){
     });
   });
 })
+
+window.addEventListener('load', function() { new Accessibility(); }, false);
 </script>
 
 

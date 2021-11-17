@@ -1,0 +1,3 @@
+$(function() {
+    $('#accessibility-tool').accessibilityTool()
+  })

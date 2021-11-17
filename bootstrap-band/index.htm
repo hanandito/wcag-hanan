@@ -9,6 +9,7 @@
   <link href="Bootstrap%20Theme%20The%20Band_files/css_002.css" rel="stylesheet" type="text/css">
   <link href="Bootstrap%20Theme%20The%20Band_files/css.css" rel="stylesheet" type="text/css">
   <script src="Bootstrap%20Theme%20The%20Band_files/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
   <script src="Bootstrap%20Theme%20The%20Band_files/bootstrap.js"></script>
   <style>
   body {
@@ -462,7 +463,16 @@ $(document).ready(function(){
   });
 })
 </script>
-
-
+<script>
+  // optional init
+    window.onload = function() {
+      window.micAccessTool = new MicAccessTool({
+        link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
+        contact: 'mailto:your-mail@your-awesome-website.com',
+        buttonPosition: 'left', // default is 'left'
+        forceLang: 'en-US' // default is 'en' may be 'he-IL' or 'ru-RU'
+      });
+    }
+  </script>
 
 </body></html>
